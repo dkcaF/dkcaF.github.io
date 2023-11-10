@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+body{
+    background: url(imagens/MainBackground.jpg) repeat fixed;
+    height: 50;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+.header{ /*cabecalho*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    z-index: 100;
+}
+.logo{ 
+    color: rgb(31, 31, 31);
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.navbar a{
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 18;
+    font-weight: 500;
+    padding: 5px 0px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.navbar a:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(52, 160, 52, 0.281);
+}
+
+
+
+/* TEXTO 1  TEXTO 1  TEXTO 1  TEXTO 1 TEXTO 1  TEXTO 1  */
+section{
+    padding: 10rem 9% 2rem;
+}
+.home-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100hv;
+    padding-bottom: 10px;
+}
+.text-content h5{
+    font-size: 20px;
+    color: #25ad61;
+    font-weight: 500;
+}
+.text-content h2{
+    font-size: 50px;
+    color: #080808;
+    font-weight: 600;
+}
+.text-content p{
+    max-width: 6000px;
+    padding-right: 100px;
+    color: #333333;
+    font-weight: 200;
+}   
+.btn_1{
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    background: rgb(71, 71, 134);
+    border: 2px solid rgb(13, 13, 27);
+    outline: none;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn_1:hover{
+color: rgb(71, 71, 134);
+}
+.btn_1::before{
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+.btn_1:hover:before{
+    width: 100%;
+}
+
+
+/* TEXTO 2  TEXTO 2  TEXTO 2  TEXTO 2 TEXTO 2  TEXTO 2  */
+.heading{
+    font-size: 36px;
+    text-align: left;
+}
+.heading span{
+    color: #25ad61;
+}
+.camoes-section{        /* 1 seção-imagem*/
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+}
+.Camoes .Camoes-img img{    /* 1 imagem*/
+    height: 250px;
+    width: 230px;
+    padding: 0 10px 0 10px;
+    box-shadow: 0 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:inherit;
+    float: left;
+    margin-right: 15px;
+}
+
+.inner-text{
+    margin-top: 50px;
+    text-align: left;
+}
+.inner-text h2{
+    font-size: 25px;
+}
+.inner-text p{
+    font-size: 14px;
+    text-align: left;
+    max-width: 5000px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+  /* botao btn-inicial*/
+  .btn-inicial{
+    background:
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat 0 bottom/4px 2px,
+    linear-gradient(to left,
+    currentColor 5px,transparent 0)
+    no-repeat right bottom/4px 2px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 18px;
+    height: 15px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: -2px;
+    }
+   
+    .btn-inicial::after,
+    .btn-inicial::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+
+    }
+   
+    .btn-inicial::before {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 4px;
+    transform: rotate(45deg);
+    top: -5px;
+    border-radius: 3px;
+    width: 14px;
+    height: 14px;
+    left: 0
+    }
+   
+    .btn-inicial::after {
+    width: 8px;
+    height: 10px;
+    border: 2px solid;
+    border-radius: 100px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    left: 3px;
+    bottom: 0
+    } 
