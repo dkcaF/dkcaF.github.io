@@ -6,7 +6,7 @@
     font-family: "poppins";
 }
 body{
-    background: url(imagens/MainBackground.jpg) repeat fixed;
+    background: url(MainBackground.jpg) repeat fixed;
     height: 50;
     background-position: center;
     background-size: cover;
